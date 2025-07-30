@@ -12,25 +12,18 @@ A Python command-line application to help you **track income & expenses**, **set
 - [Tech Stack](#tech-stack)  
 - [Project Structure](#project-structure)  
 - [Getting Started](#getting-started)  
-- [Usage](#usage)  
-  - [User Registration & Login](#user-registration--login)  
-  - [Income & Expense Tracking](#income--expense-tracking)  
-  - [Budgets](#budgets)  
-  - [Reports](#reports)  
-  - [Backup & Restore](#backup--restore)  
+- [Usage](#usage)
 - [Project Output & Screenshots](#project-output--screenshots)  
-- [Testing](#testing)  
-- [Guidelines & Best Practices](#guidelines--best-practices)  
-- [Suggested 25‑Day Timeline](#suggested-25-day-timeline)  
+- [Testing](#testing)
 - [Contributing](#contributing)  
-- [License](#license)  
-- [Submission / Contact](#submission--contact)
+- [License](#license)
+- [Developer](#developer-info)
 
 ---
 
 ## Overview
 
-**Goal:** Create a CLI tool that lets users register/login, record transactions with categories (e.g., Food, Rent, Salary), set monthly category budgets, and generate monthly/yearly reports showing totals and savings. Data is stored locally (e.g., SQLite).
+It's a CLI tool that lets users register/login, record transactions with categories (e.g., Food, Rent, Salary), set monthly category budgets, and generate monthly/yearly reports showing totals and savings. Data is stored locally (e.g., SQLite).
 
 ---
 
@@ -74,12 +67,20 @@ personal-finance-manager/
 ---
 
 ## Getting Started
-
+## Clone the project.
 ```bash
 git clone https://github.com/your-username/personal-finance-manager.git
 cd personal-finance-manager
+```
+
+## Activate the Virtual Environment.
+```
 python -m venv .venv
 source .venv/bin/activate
+```
+
+## Install Required Package
+```
 pip install -r requirements.txt
 python -m pfm.cli init-db
 ```
@@ -88,60 +89,30 @@ python -m pfm.cli init-db
 
 ## Usage
 
-### User Registration & Login
-
-```bash
-python -m pfm.cli register --username alice --password "StrongPass!23"
-python -m pfm.cli login --username alice --password "StrongPass!23"
-```
-
-### Income & Expense Tracking
-
-```bash
-python -m pfm.cli add-income --amount 50000 --category Salary --note "July salary" --date 2025-07-01
-python -m pfm.cli add-expense --amount 1200 --category Food --note "Groceries" --date 2025-07-02
-python -m pfm.cli list-tx --month 2025-07
-```
-
-### Budgets
-
-```bash
-python -m pfm.cli set-budget --category Food --amount 5000 --month 2025-07
-python -m pfm.cli view-budgets --month 2025-07
-```
-
-### Reports
-
-```bash
-python -m pfm.cli report --month 2025-07
-python -m pfm.cli report --year 2025
-```
-
-### Backup & Restore
-
-```bash
-python -m pfm.cli backup --out backups/
-python -m pfm.cli restore --file backups/backup-2025-07-30.db
-```
+- Create account
+- Log in with your account
+- Perform all banking processes
+- Track all your finances
+- Take a backup (If you want)
+- Delete account (If you want)
+- logout.
+  
 
 ---
 
 ## Project Output & Screenshots
 
-Add screenshots to `assets/screenshots/` folder and reference them like below:
+### Login and Registration
+![Login](screenshort/login.png)
 
-```md
-### Sample Demo
+### All Featucher
+![Report](screenshort/welcome.png)
 
-**Login and Add Transactions**
-![Login](assets/screenshots/login-and-add.png)
+### Transaction & Update
+![Transaction](screenshort/update.png)
 
-**Monthly Report**
-![Report](assets/screenshots/report-july-2025.png)
-
-**Budget Alert**
-![Budget](assets/screenshots/budget-alert.png)
-```
+### View Transaction
+![View](screenshort/View.png)
 
 ---
 
@@ -159,25 +130,6 @@ Test modules for:
 
 ---
 
-## Guidelines & Best Practices
-
-- Use Python and SQLite  
-- Keep code modular and clean  
-- Provide CLI error messages and usage guides
-
----
-
-## Suggested 25‑Day Timeline
-
-- **Days 1–5:** Authentication  
-- **Days 6–10:** CRUD transactions  
-- **Days 11–15:** Reports  
-- **Days 16–20:** Budgets  
-- **Days 21–23:** Backup/restore  
-- **Days 24–25:** Testing & Docs
-
----
-
 ## Contributing
 
 1. Fork the repo  
@@ -192,7 +144,11 @@ MIT License
 
 ---
 
-## Submission / Contact
+## Developer Info
+### Roshan Sharma | Software Engineer 
+- **GitHub**: [RoshanSharma7](https://github.com/RoshanSharma7)
+- **LinkedIn**: [RoshanSharma7](https://www.linkedin.com/in/roshan-sharma7)
+- **Instagram**: [iamroshansharma7](https://www.instagram.com/iamroshansharma7/)
+- **Email**: roshan.amlai96@gmail.com
 
-- Submit at: https://forms.gle/KBqjYVUqG8zXX9zy8  
-- Contact: internship.innobyteservices@gmail.com
+Follow me on all Social Media platforms for better communication.
