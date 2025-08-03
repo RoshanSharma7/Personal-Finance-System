@@ -140,7 +140,9 @@ Test modules for:
 
 ## License
 
-MIT License
+This project is licensed under the MIT License. Please take a look at the [LICENSE](License.md) file for details.
+
+The [README](Readme.md) file is structured to provide a comprehensive overview of the project, instructions for running it, and potential areas for improvement.
 
 ---
 
